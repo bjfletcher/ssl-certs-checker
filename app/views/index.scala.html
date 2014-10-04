@@ -1,0 +1,10 @@
+@(implicit request: RequestHeader)
+
+@main("SSL Certificates Checker") {
+    <h1>SSL Certificate Checker</h1>
+    <p>See <a href="//github.com/bjfletcher/ssl-certs-checker">GitHub repository</a> for more details.</p>
+    <ul class="ssl-results js-ssl-results"></ul>
+    <script>
+        var feedUrl = "@routes.Application.feed.webSocketURL()"
+    </script>
+}
